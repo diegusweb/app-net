@@ -26,7 +26,7 @@ namespace MvcApplication2.Controllers
             return View(listaCargos.ToList());
         }
 
-        public ActionResult UsuarioPOrCargo(string cargo)
+        public ActionResult UsuarioPorCargo(string cargo)
         {
             var modelo = from p in entitis.useario where p.cargo.car_des == cargo select p;
             return View(modelo.ToList());

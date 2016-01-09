@@ -190,6 +190,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CargoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MantenimientoCargoController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -350,6 +351,14 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Cargo\Index.cshtml" />
+    <Content Include="Views\Cargo\ListadoMaestroCargos.cshtml" />
+    <Content Include="Views\Cargo\UsuarioPorCargo.cshtml" />
+    <Content Include="Views\MantenimientoCargo\Index.cshtml" />
+    <Content Include="Views\MantenimientoCargo\Details.cshtml" />
+    <Content Include="Views\MantenimientoCargo\Create.cshtml" />
+    <Content Include="Views\MantenimientoCargo\Edit.cshtml" />
+    <Content Include="Views\MantenimientoCargo\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
