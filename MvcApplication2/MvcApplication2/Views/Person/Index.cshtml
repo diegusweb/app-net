@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MvcApplication2.Models.Person>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado de Personas</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table>
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.codigo)*@
+            Codigo
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.nombre)*@
+            Nombre
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.apepat)*@
+            APelldo Paterno
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.apemat)*@
+            Apellido MAterno
+        </th>
+        @*<th></th>*@
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apepat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apemat)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>*@
+    </tr>
+}
+
+</table>
