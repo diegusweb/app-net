@@ -29,6 +29,7 @@ namespace MvcApplication4.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult Create(area a)
         {
             try
@@ -62,7 +63,7 @@ namespace MvcApplication4.Controllers
                 area.are_cod = id;
                 area.are_des = a.are_des;
 
-                if (model.ActualizarArea(area).Equals("Ok"))
+                if (model.ActualizarArea(area).Equals("OK"))
                 {
                     return RedirectToAction("Index");
                 }

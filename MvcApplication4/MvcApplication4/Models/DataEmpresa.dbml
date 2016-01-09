@@ -12,11 +12,6 @@
       <Column Name="are_des" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.PR_ACTUALIZAR_AREA" Method="PR_ACTUALIZAR_AREA">
-    <Parameter Name="codigo2" Type="System.Int32" DbType="Int" />
-    <Parameter Name="descripcion2" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.PR_BUSCAR_AREA" Method="PR_BUSCAR_AREA">
     <Parameter Name="codigo" Type="System.Int32" DbType="Int" />
     <ElementType Name="PR_BUSCAR_AREAResult">
@@ -30,6 +25,11 @@
   </Function>
   <Function Name="dbo.PR_INSERTAR_AREA" Method="PR_INSERTAR_AREA">
     <Parameter Name="descripcion" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PR_ACTUALIZAR_AREA" Method="PR_ACTUALIZAR_AREA">
+    <Parameter Name="codigo2" Type="System.Int32" DbType="Int" />
+    <Parameter Name="descripcion2" Type="System.String" DbType="VarChar(100)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

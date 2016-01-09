@@ -80,13 +80,6 @@ namespace MvcApplication4.Models
 			return ((ISingleResult<PR_LISTAR_AREAResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PR_ACTUALIZAR_AREA")]
-		public int PR_ACTUALIZAR_AREA([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> codigo2, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string descripcion2)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), codigo2, descripcion2);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PR_BUSCAR_AREA")]
 		public ISingleResult<PR_BUSCAR_AREAResult> PR_BUSCAR_AREA([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> codigo)
 		{
@@ -105,6 +98,13 @@ namespace MvcApplication4.Models
 		public int PR_INSERTAR_AREA([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string descripcion)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PR_ACTUALIZAR_AREA")]
+		public int PR_ACTUALIZAR_AREA([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> codigo2, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string descripcion2)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), codigo2, descripcion2);
 			return ((int)(result.ReturnValue));
 		}
 	}

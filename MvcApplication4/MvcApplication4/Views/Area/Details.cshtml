@@ -1,0 +1,22 @@
+﻿@model MvcApplication4.Models.area
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>area</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.are_des)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.are_des)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.are_cod }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
